@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect width="160" height="40" rx="4" fill="transparent" />
+  <path d="M12 28 C12 16, 26 12, 26 28 Z" fill="#0c6b58" />
+  <circle cx="26" cy="14" r="5" fill="#c69214" />
+  <path d="M26 28 C26 16, 40 12, 40 28 Z" fill="#1b365d" />
+  <text x="48" y="19" font-family="'Noto Sans Arabic', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1b365d">وزارة الموارد البشرية</text>
+  <text x="48" y="31" font-family="'Noto Sans Arabic', 'Segoe UI', sans-serif" font-size="9" fill="#0c6b58">والتنمية الاجتماعية</text>
+</svg>
