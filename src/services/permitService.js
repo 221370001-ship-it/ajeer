@@ -10,14 +10,14 @@ import {
   orderBy,
   serverTimestamp,
 } from 'firebase/firestore'
-import { db } from '../lib/firebase.js'
+import { db, firebaseConfig } from '../lib/firebase.js'
 
 const COLLECTION_NAME = 'permitRecords'
 const LOCAL_STORAGE_KEY = 'ajeer_permit_records'
 
 const isFirebaseConfigured = Boolean(
-  import.meta.env.VITE_FIREBASE_API_KEY && 
-  import.meta.env.VITE_FIREBASE_API_KEY !== 'YOUR_API_KEY'
+  (firebaseConfig?.apiKey && firebaseConfig.apiKey !== 'YOUR_API_KEY') ||
+  (import.meta.env.VITE_FIREBASE_API_KEY && import.meta.env.VITE_FIREBASE_API_KEY !== 'YOUR_API_KEY')
 )
 
 // Initial sample record based on authentic Ajeer HRS Permit
